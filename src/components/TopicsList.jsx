@@ -6,8 +6,8 @@ import moment from "moment";
 
 const getTopics = async () => {
   try {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-    const res = await fetch(`${apiUrl}/api/topics`, {
+    // const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    const res = await fetch("http://localhost:3000/api/topics", {
       cache: "no-store",
     });
 
